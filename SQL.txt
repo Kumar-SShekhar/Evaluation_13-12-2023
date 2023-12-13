@@ -1,0 +1,5 @@
+
+SELECT ProjectName
+FROM ProjectDetail
+GROUP BY ProjectName
+HAVING COUNT(Distinct EmployeeDetailID) > 1;
