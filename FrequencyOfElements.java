@@ -3,7 +3,7 @@ public class FrequencyOfElements
 {
 	public static void main(String[] args) {
 		System.out.println("Hello World");
-		ArrayList<Integer> al= Arrays.asList(4,2,8,3,1,1,4,4,6,6,6);
+		List<Integer> al= Arrays.asList(4,2,8,3,1,1,4,4,6,6,6);
 		
 		LinkedHashMap <Integer, Integer> lhm = new LinkedHashMap<>();
 		for(int n: al){
@@ -11,3 +11,7 @@ public class FrequencyOfElements
 		}
 		Collections.sort(al ,(a,b) -> lhm.get(b) - lhm.get(a));
 		System.out.println(al);
+
+	}
+
+}
